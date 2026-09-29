@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +12,7 @@
     <!-- Enlaces -->
     <!-- Estilos -->
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/styles_temp.css">
     <link rel="stylesheet" href="./css/styles.css">
-    
-    <!-- Script -->
-    <script src="./js/modernizr-custom.js"></script>
 
     <!-- Icons -->
     <link rel="stylesheet" href="./icons/fontawesome-free-6.7.2-web/css/all.min.css">
@@ -24,21 +20,23 @@
     <title>Mi portafolio</title>
 </head>
 <body>
-    <header>
+    <header id="section-home">
         <div class="container">
             <nav class="menu">
-                <a href="#">Inicio</a>
-                <a href="#">Acerca de</a>
-                <a href="#">Trabajos</a>
-                <a href="#">Habilidades</a>
-                <a href="#">Contacto</a>
+                <a href="#section-home">Inicio</a>
+                <a href="#section-about">Acerca de</a>
+                <a href="#section-jobs">Trabajos</a>
+                <a href="#section-skills">Habilidades</a>
+                <a href="#section-contact">Contacto</a>
             </nav>
             <div class="container-text">
                 <div class="text">
                     <h1 class="name">Neri Emmanuel Castro Huerta</h1>
-                    <h2 class="profession">Estudiante de Ingenieria en Software</h2>
-                    <button class="btn-cv">DESCARGAR CV<img src="./img/downicon/downloadblanco.png" width="50px" height="50px">
-                    </button>
+                    <h2 class="profession">Ingeniero en Software</h2>
+                    <a class="btn-cv" href="./img/cv/Neri%20Castro%20-%20CV.pdf" download="Neri Castro - CV.pdf">
+                        DESCARGAR CV
+                        <img src="./img/downicon/downloadblanco.png" width="50" height="50" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -48,11 +46,11 @@
         <section id="section-about">
             <div class="container">
                 <div class="photo">
-                    <img src="./img/Neri.jpg" width="200px" height="200px" alt="Neri Castro">
+                    <img src="./img/Neri.webp" width="200" height="200" alt="Neri Castro" loading="eager" decoding="async">
                 </div>
                 <div class="text">
                     <h3 class="title">Acerca de</h3>
-                    <p>Hola, soy <span class="bold">Neri Emmanuel Castro Huerta</span>, estudiante de Ingeniería en Software. Bienvenido a mi portafolio, donde encontrarás mis proyectos y experiencia en desarrollo.</p>
+                    <p>Hola, soy <span class="bold">Neri Emmanuel Castro Huerta</span>, ingeniero en Software egresado. Bienvenido a mi portafolio, donde encontrarás mis proyectos y experiencia en desarrollo.</p>
                     </p>
                 </div>
             </div>
@@ -66,42 +64,47 @@
                     
                     <div class="job">
                         <div class="img-job">
-                            <img src="./img/trabajos/Kotlinproyecto.png" alt="Lorem Ipsum">
+                            <img src="./img/CharlyBarb.png" alt="Imagen de la landing page de Charly Barb" loading="lazy" width="400" height="250" decoding="async">
                         </div>
                         <div class="description">
-                            <p class="name">Creé una calculadora que permite hacer operaciones basicas mediante una interfaz</p>
-                            <p class="category">Kotlin</p>
+                            <p class="name">Desarrollé una landing page para una barbería para ayudar a Charly Barb a mejorar su presencia digital</p>
+                            <p class="category">HTML, CSS, JavaScript</p>
                         </div>
                     </div>
         
                     <div class="job">
                         <div class="img-job">
-                            <img src="./img/trabajos/SQL.png" alt="Lorem Ipsum">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250" role="img" aria-label="Imagen no disponible para proyecto SQL">
+                                <rect width="400" height="250" fill="#e0e0e0"/>
+                                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="16" fill="#999">Imagen no disponible</text>
+                            </svg>
                         </div>
                         <div class="description">
-                            <p class="name">Consultas a BD en el cual simulabamos un departamentos de trabajadores</p>
-                            <p class="category">SQL</p>
+                            <p class="name">Plataforma web para la gestión de perfiles e información de estudiantes.</p>
+                            <p class="category">Angular, Nestjs y postgresql</p>
                         </div>
                     </div>
         
                     <div class="job">
                         <div class="img-job">
-                            <img src="./img/trabajos/trabajo mvc.png" alt="Lorem Ipsum">
+                            <img src="./img/trabajos/pos.jpeg" alt="Pantalla de inicio de sesión del punto de venta" loading="lazy" width="400" height="250" decoding="async">
                         </div>
                         <div class="description">
-                            <p class="name"> Aplicación web para gestionar registros escolares con funcionalidades de agregar, 
-                            editar, eliminar y visualizar datos</p>
+                            <p class="name">Punto de venta con CRUD de productos, usuarios y ventas.</p>
                             <p class="category">C#, ASP.NET MVC, SQL Server</p>
                         </div>
                     </div>
         
                     <div class="job">
                         <div class="img-job">
-                            <img src="./img/trabajos/javatrabajo.png" alt="Lorem Ipsum">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250" role="img" aria-label="Imagen no disponible para proyecto Java">
+                                <rect width="400" height="250" fill="#e0e0e0"/>
+                                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="16" fill="#999">Imagen no disponible</text>
+                            </svg>
                         </div>
                         <div class="description">
-                            <p class="name">Aplicación que implementa y compara la eficiencia de algoritmos de ordenamiento</p>
-                            <p class="category">JAVA</p>
+                            <p class="name">Desarrollo de módulos administrativos y funcionalidades para una plataforma web.</p>
+                            <p class="category">Angular y C#</p>
                         </div>
                     </div>
                 </div>
@@ -111,66 +114,43 @@
 <!-- Seccion habilidades -->
         <section id="section-skills">
             <div class="container">
+
+
+                <!-- Título de la sección -->
                 <h3 class="title">Habilidades</h3>
-                <div class="container-skills">  
-                    <div class="skill"> 
-                        <div class="icon-skill">
-                            <i class="fa-brands fa-html5"></i>
-                        </div>
-                        <div class="description">
-                            <p class="name">HTML5</p> 
-                            <p class="category">Principiante</p>
-                        </div>
+                 <!-- Habilidad: HTML5 -->
+                <div class="container-skills">
+                    <div class="skill">
+                         <!-- Icono de HTML5 proporcionado por Font Awesome -->
+                        <div class="icon-skill"><i class="fa-brands fa-html5"></i></div>
+                          <!-- Nombre de la tecnología -->
+                        <div class="description"><p class="name">HTML5</p></div>
                     </div>
-                    <div class="skill"> 
-                        <div class="icon-skill">
-                            <i class="fa-brands fa-java"></i>
-                        </div>
-                        <div class="description">
-                            <p class="name">JAVA</p> 
-                            <p class="category">Intermedio</p>
-                        </div>
+                    <div class="skill">
+                        <div class="icon-skill"><i class="fa-brands fa-css3-alt"></i></div>
+                        <div class="description"><p class="name">CSS3</p></div>
                     </div>
-                    <div class="skill"> 
-                        <div class="icon-skill">
-                            <i class="fa-solid fa-database"></i>
-                        </div>
-                        <div class="description">
-                            <p class="name">SQL Server</p> 
-                            <p class="category">Intermedio</p>
-                        </div>
+                    <div class="skill">
+                        <div class="icon-skill"><i class="fa-brands fa-js"></i></div>
+                        <div class="description"><p class="name">JavaScript</p></div>
                     </div>
-
-                    <div class="skill"> 
-                        <div class="icon-skill">
-                            <i class="fa-brands fa-python"></i>
-                        </div>
-                        <div class="description">
-                            <p class="name">PYTHON</p> 
-                            <p class="category">Principiante</p>
-                        </div>
+                    <div class="skill">
+                        <div class="icon-skill"><i class="fa-brands fa-angular"></i></div>
+                        <div class="description"><p class="name">Angular</p></div>
                     </div>
-
-                    <div class="skill"> 
-                        <div class="icon-skill">
-                            <i class="devicon-csharp-plain"></i>
-                        </div>
-                        <div class="description">
-                            <p class="name">C#</p> 
-                            <p class="category">Principiante</p>
-                        </div>
+                    <div class="skill">
+                        <div class="icon-skill"><i class="fa-solid fa-server"></i></div>
+                        <div class="description"><p class="name">NestJS</p></div>
                     </div>
-
-                    <div class="skill"> 
-                        <div class="icon-skill">
-                            <i class="devicon-kotlin-plain"></i>
-                        </div>
-                        <div class="description">
-                            <p class="name">KOTLIN</p> 
-                            <p class="category">Principiante</p>
-                        </div>
+                    <div class="skill">
+                        <div class="icon-skill"><i class="fa-solid fa-database"></i></div>
+                        <div class="description"><p class="name">PostgreSQL</p></div>
                     </div>
-                </div> 
+                    <div class="skill">
+                        <div class="icon-skill"><i class="fa-solid fa-code"></i></div>
+                        <div class="description"><p class="name">C#</p></div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -178,14 +158,7 @@
     <footer>
         <section id="section-contact">
             <h3 class="title">Contacto</h3>
-            <form action="form-message" method="POST" class="form-message">
-                <div class="row">
-                    <input type="text" name="nombre" placeholder="Nombre" required>
-                    <input type="email" name="email" placeholder="Correo" required>
-                </div>
-                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-                <input type="submit" value="Enviar" class="btn-send-msg">
-            </form>
+            <h2>neriemma17@gmail.com</h2>
         </section>
         
         <section id="section-social-media">
